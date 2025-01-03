@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css2?family=Monoton&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+html[data-theme="light"], :root {
+    --body_bg: #e8fffd;
+    --navbar_menu_bg: #fff;
+    --navbar_link_fg:#000;
+    --navbar_card_number_bg:#f22;
+    --navbar_menu_shadow: 0 2px 4px rgba(0, 0, 20, 0.061), 0 1px 2px rgba(0, 0, 20, .061);
+    --card_shadow: 0 2px 4px rgba(0, 0, 20, .061), 0 1px 2px rgba(0, 0, 20, .061);
+}
+
+html[data-theme="dark"], :root {
+    --body_bg: #e8fffd;
+}
+
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none
+}
+
+
+
+body{
+    background-color: var(--body_bg);
+}
+
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Navbar */
+
+.navbar{
+    position: fixed;
+    top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.navbar__menu{
+    border-radius: 30px;
+    background-color: var(--navbar_menu_bg);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45vw;
+    box-shadow: var(--navbar_menu_shadow);
+}
+
+
+.navbar__item{
+    list-style: none;
+
+}
+
+
+.navbar__link{
+    color: var(--navbar_link_fg);
+    font-size: 1.1rem;
+    font-family: Roboto;
+}
+
+
+.navbar__link__active{
+    font-weight: bold !important;
+}
+
+
+.navbar__card{
+    position: relative;
+    margin: 15px;
+}
+
+
+
+.navbar__card__number{
+    background-color: var(--navbar_card_number_bg);
+    color: var(--navbar_card_number_fg);
+    border-radius: 30px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    bottom: 20px;
+    left: 18px;
+    text-align: center;
+    display: block;
+    font-family: Roboto;
+}
+
+
+.navbar__logo{
+    font-family: Monoton;
+    font-size: 1.3rem;
+}
+/* Navbar */
