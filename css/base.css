@@ -6,7 +6,8 @@ html[data-theme="light"], :root {
     --body_bg: #e8fffd;
     --navbar_menu_bg: #fff;
     --navbar_link_fg:#000;
-    --navbar_card_number_bg:#f22;
+    --navbar_btn_number_bg:#ff2e69;
+    --navbar_btn_number_fg: #000;
     --navbar_menu_shadow: 0 2px 4px rgba(0, 0, 20, 0.061), 0 1px 2px rgba(0, 0, 20, .061);
     --card_shadow: 0 2px 4px rgba(0, 0, 20, .061), 0 1px 2px rgba(0, 0, 20, .061);
 }
@@ -78,27 +79,34 @@ body{
 }
 
 
+.navbar__link svg{
+    margin-top: 3px;
+}
+
+
 .navbar__link__active{
     font-weight: bold !important;
 }
 
 
-.navbar__card{
+.navbar__btn{
     position: relative;
     margin: 15px;
 }
 
 
 
-.navbar__card__number{
-    background-color: var(--navbar_card_number_bg);
-    color: var(--navbar_card_number_fg);
+.navbar__btn__number{
+    background-color: var(--navbar_btn_number_bg);
+    color: var(--navbar_btn_number_fg);
+    font-size: 13px;
     border-radius: 30px;
     position: absolute;
     width: 20px;
     height: 20px;
     line-height: 20px;
-    bottom: 20px;
+    text-align: center;
+    bottom: 21px;
     left: 18px;
     text-align: center;
     display: block;
@@ -108,6 +116,7 @@ body{
 
 .navbar__logo{
     font-family: Monoton;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: 100;
 }
 /* Navbar */
