@@ -10,4 +10,4 @@
 ```
 
 
-![poster](https://github.com/soren2007/frontend-navbar-2025001/blob/master/github/images/poster.jpg?raw=true)
+![poster](https://github.com/soren2007/frontend-navbar-2025001/blob/master/github/images/poster.png?raw=true)
